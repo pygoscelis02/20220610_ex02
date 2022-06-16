@@ -80,7 +80,10 @@ html *{
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-VISUAL PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .main-visual{
-    padding: 0px 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NEW PART (appried for "index.html" only) ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -90,31 +93,31 @@ html *{
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-AND-ASIDE:FLEX ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .main-and-aside{
-    width: 900px;
-    /* max-width: 910px; */
     display: flex;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-CONTENTS PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
-
+.main-and-aside > .main-contents{
+    justify-content: flex-start;
+    padding: 10px;
+}
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ ASIDE PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
-
-
-.aside{
-    display: flex;
+.main-and-aside > .aside{
+    /* display: flex; */
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 .aside-ul{
     list-style-type: none;
-    align-items: flex-end;
 }
 
 .aside-list-item li{
     display: flex;
-    color:#666666;
+    color: #666666;
     font-weight: bold;
     width: 200px;
     height: 80px;
@@ -122,6 +125,7 @@ html *{
     align-items: center;
     border: #c6c6c6 solid 1px;
     border-radius: 15px;
+    background: linear-gradient(to bottom, #fadfe6, #f5c7b3);
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ FOOTER PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
