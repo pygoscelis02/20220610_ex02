@@ -10,9 +10,12 @@ html *{
 
 
 .body{
-    background-color: #eae7d2;
-    background-image: url(images/bg.gif);
+    width: auto;
+    height: auto;
+    /* background-color: #eae7d2; */
+    background-image: url("../images/bg.gif");
     background-repeat: repeat;
+    
 }
 
 /* background-image: url(images/bg.gif); */
@@ -25,9 +28,9 @@ html *{
     background-color: #ffffff;
 }
 
-.package-10px{
+/* .package-10px{
     padding: 10px;
-}
+} */
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ HEADER PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
@@ -57,7 +60,6 @@ html *{
 }
 
 .nav-list-item li{
-    flex-direction: row;
     list-style-type: none;
     width: 140px;
     height: 30px;
@@ -72,18 +74,24 @@ html *{
     transform: translate(-50%,-50%);
 }
 
+.nav-list-item li a, a:link{
+    color: #666666;
+    text-decoration: none;
+}
 
 .nav-list-item li+li{
     margin-left: auto;
 }
 
+/* ☆onmouseover,onmouseoutは、「見栄えの分離」というモットーに反しているためダサいので、後で、使わずに済む方法を調べる */
+
+/* NAVIGATION：画像内の文字の配置に別解有り */
+
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-VISUAL PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .main-visual{
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    width: 900px;
+    margin: auto;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NEW PART (appried for "index.html" only) ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -94,6 +102,7 @@ html *{
 
 .main-and-aside{
     display: flex;
+    justify-content: space-between;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-CONTENTS PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -108,7 +117,6 @@ html *{
 .main-and-aside > .aside{
     /* display: flex; */
     justify-content: flex-end;
-    padding: 10px;
 }
 
 .aside-ul{
@@ -126,9 +134,30 @@ html *{
     border: #c6c6c6 solid 1px;
     border-radius: 15px;
     background: linear-gradient(to bottom, #fadfe6, #f5c7b3);
+    margin: 10px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ FOOTER PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
+
 .footer{
-    text-align: center;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    position: relative;
+}
+
+.footer .under-line{
+    width: 900px;
+    height: 12.5px;
+    position: absolute;
+    top: 0px;
+    background-color: #ffe294;
+    z-index: 1;
+}
+
+.footer p{
+    position: absolute;
+    z-index: 2;
+    font-size: small;
 }
