@@ -1,6 +1,6 @@
-*{
+/* *{
     outline:  red solid 1px;
-}
+} */
 
 html *{
     box-sizing: border-box;
@@ -39,7 +39,7 @@ html *{
     display: flex;
     flex: auto;
     padding-top: 23px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 
 .header img{
@@ -55,29 +55,49 @@ html *{
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NAVIGATION-MENU PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
+.nav{
+    padding: 9px;
+}
+
 .nav-list-item{
     display: flex;
 }
 
 .nav-list-item li{
     list-style-type: none;
-    width: 140px;
-    height: 30px;
-    margin:10px;
+    height: 32px;
+    width: 142px;
     position: relative;
 }
 
 .nav-list-item li p{
     position: absolute;
-    top: 53%;
+    z-index: 10;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+.nav-list-item li img{
+    position: absolute;
+}
+
+.nav-list-item li .button{
+    z-index: 5;
+}
+
 
 .nav-list-item li a, a:link{
     color: #666666;
     text-decoration: none;
 }
+
+.nav-list-item li a:hover img:nth-child(2){
+    opacity: 0;
+}
+
+
+
 
 .nav-list-item li+li{
     margin-left: auto;
@@ -92,6 +112,7 @@ html *{
 .main-visual{
     width: 900px;
     margin: auto;
+    padding-top: 1px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NEW PART (appried for "index.html" only) ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
