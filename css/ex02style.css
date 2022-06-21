@@ -6,6 +6,7 @@ html *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "メイリオ";
 }
 
 
@@ -130,7 +131,7 @@ html *{
 
 .main-and-aside > .main-contents{
     justify-content: flex-start;
-    padding: 10px;
+    padding: 10px 10px 8.3px 10px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ ASIDE PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -173,7 +174,7 @@ html *{
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ FOOTER PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .footer{
-    height: 25px;
+    height: 23.5px;
     /* background-color: #ffffff; */
     display: flex;
     justify-content: center;
@@ -182,7 +183,7 @@ html *{
 
 .footer .under-line{
     width: 900px;
-    height: 12.5px;
+    height: 15px;
     position: absolute;
     top: 0px;
     background-color: #ffe294;
@@ -191,8 +192,9 @@ html *{
 
 .footer p{
     position: absolute;
+    top: 2.5px;
     z-index: 2;
-    font-size: small;
+    font-size: 13.3px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ index.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -216,10 +218,26 @@ article {
     list-style: disc;
 }
 
-.new > article > ul li a, a:link{
+.new > article > ul li a{
     text-decoration: underline;
-    color: unset;
+    color: blue;
 }
+
+.new > article > ul li a:link{
+    text-decoration: underline;
+    color: blue;
+}
+
+.new > article > ul li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.new > article > ul li a:visited{
+    text-decoration: underline;
+    color:indigo;
+}
+
 
 .announcements {
     display: flex;
@@ -230,7 +248,7 @@ article {
 .announcements div{
     width: 300px;
     height: 240px;
-    box-shadow: 5px 5px 5px #666666;
+    box-shadow: 5px 5px 5px #8e8e8e;
     background-image: url("../images/info_bg.gif");
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +256,7 @@ article {
     /* background-position: 50%; */
 }
 
-.announcements div p:nth-of-type(1){
+.announcements div p:nth-child(1){
     display: flex;
     justify-content: center;
     color: #444444;
@@ -256,10 +274,12 @@ article {
 }
 
 .announcements div p:nth-of-type(2){
-    height: 70px;
+    height: 75px;
     font-size: 14.4px;
-    margin-right: 2.1px;
+    margin-right: 1.45px;
     margin-left: 5px;
+    /* background-image: none; */
+    line-height: 1.559em;
 }
 
 .announcements div+div{
