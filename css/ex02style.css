@@ -57,7 +57,9 @@ html *{
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NAVIGATION-MENU PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .nav{
-    padding: 9px;
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
 }
 
 .nav-list-item{
@@ -97,9 +99,6 @@ html *{
     opacity: 0;
 }
 
-
-
-
 .nav-list-item li+li{
     margin-left: auto;
 }
@@ -113,25 +112,14 @@ html *{
 .main-visual{
     width: 900px;
     margin: auto;
-    padding-top: 1px;
+    padding-top: 10px;
 }
-
-/* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NEW PART (appried for "index.html" only) ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
-
-
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-AND-ASIDE:FLEX ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .main-and-aside{
     display: flex;
     justify-content: space-between;
-}
-
-/* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ MAIN-CONTENTS PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
-
-.main-and-aside > .main-contents{
-    justify-content: flex-start;
-    padding: 10px 10px 8.3px 10px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ ASIDE PART ↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
@@ -198,6 +186,12 @@ html *{
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ index.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
+
+.main-and-aside > .main-contents-i{
+    justify-content: flex-start;
+    padding: 10px 10px 8.3px 10px;
+}
+
 .new {
     width: 890px;
     height: 142px;
@@ -286,8 +280,92 @@ article {
     margin-left: 30px;
 }
 
+/* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ menu.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
+.title-menu{
+    height: 37.5px;
+    width: 640px;
+    background-color: #e1d9a6;
+    display: flex;
+    margin: 10px 10px 0px 10px;
+    border-radius: 7.5px;
+    
+}
 
+.title-menu img{
+    height: 64%;
+    /* width: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+    padding-top: 1px;
+}
+
+.title-menu p{
+    color:#666666;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 2px;
+}
+
+.menu-main-visual{
+    padding:10px;
+}
+
+.menu-main-visual img{
+    width: 640px;
+    height: 200px;
+}
+
+.menu-contents{
+    margin: 15px 48px 7.5px 20px;
+}
+
+.beverage-kind{
+    display: flex;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #8e8e8e;
+}
+
+.beverage-kind img{
+    width: 4.35%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 23px;
+    padding-top: 1px;
+
+}
+
+.beverage-kind p{
+    color: #505050;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tea{
+    margin: 16px 0px 21.5px 20px;
+}
+
+.coffee{
+    margin: 16px 0px 16px 20px;
+}
+
+.tea .beverage-name, .coffee .beverage-name{
+
+    color: #dc6849;
+}
+
+.tea .beverage-introduction, .coffee .beverage-introduction{
+    color: #666666;
+    margin-left: 10px;
+    line-height: 1.7em;
+}
+
+/* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ access.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NULL↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 h2{
