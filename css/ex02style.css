@@ -133,7 +133,7 @@ html *{
     list-style-type: none;
 }
 
-.aside-list-item li{
+.aside-list-item-i li, .aside-list-item-a li{
     display: flex;
     color: #666666;
     font-weight: bold;
@@ -144,11 +144,15 @@ html *{
     border: #c6c6c6 solid 1px;
     border-radius: 10px;
     background: linear-gradient(to bottom, #fadfe6, #f5c7b3);
-    margin: 10px;
 }
-.aside-list-item li a:link, a:hover, a:visited{
+.aside-list-item-i li a:link, a:hover, a:visited{
     color: #666666;
 }
+
+.aside-list-item-a li a:link, a:hover, a:visited{
+    color: #666666;
+}
+
 /* 
 .aside-list-item li a:hover{
     color: #666666;
@@ -280,6 +284,10 @@ article {
     margin-left: 30px;
 }
 
+.aside-list-item-i li{
+    margin: 10px;
+}
+
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ menu.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
 .title-menu{
@@ -366,6 +374,14 @@ article {
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ access.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
+
+.main-contents-a {
+
+}
+
+.aside-list-item-a li{
+    margin: 0px 10px 10px 10px;
+}
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ NULL↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 h2{
