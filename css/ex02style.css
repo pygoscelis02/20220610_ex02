@@ -133,7 +133,7 @@ html *{
     list-style-type: none;
 }
 
-.aside-list-item-i li, .aside-list-item-a li{
+.aside-list-item-i li, .aside-list-item-a li, .aside-list-item-m li{
     display: flex;
     color: #666666;
     font-weight: bold;
@@ -150,6 +150,10 @@ html *{
 }
 
 .aside-list-item-a li a:link, a:hover, a:visited{
+    color: #666666;
+}
+
+.aside-list-item-m li a:link, a:hover, a:visited{
     color: #666666;
 }
 
@@ -371,6 +375,10 @@ article {
     color: #666666;
     margin-left: 10px;
     line-height: 1.7em;
+}
+
+.aside-list-item-m li{
+    margin: 10px;
 }
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ access.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
