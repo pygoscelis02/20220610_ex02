@@ -375,8 +375,17 @@ article {
 
 /* 🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀↓ access.html↓🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀🐀 */
 
-.main-contents-a {
+.main-contents-a{
+    display: flex;
+    margin: 1em 0em 1.41em 1.875em;
+}
 
+.main-contents-a img{
+    margin-left: 48.5px;
+}
+
+.main-contents-a main p{
+    margin-bottom: 1em;
 }
 
 .aside-list-item-a li{
