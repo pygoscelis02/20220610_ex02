@@ -1,6 +1,6 @@
-/* *{
+*{
     outline:  red solid 1px;
-} */
+}
 
 html *{
     box-sizing: border-box;
@@ -145,6 +145,16 @@ html *{
     border-radius: 10px;
     background: linear-gradient(to bottom, #fadfe6, #f5c7b3);
 }
+
+/* ↓ボタンのどこにマウスオーバーしても、リンクできるようにとの意図で記述。 */
+/* 親要素を突き破らないよう最大幅に調整。 */
+/* 現実には、「今月のレシピ」が少し寸足らずになってしまっている。 */
+/* 時間が許せば、`nth-child`等を使って別々に指定してもいいかも。 */
+/* 「a」を書く場所を最初に考えられればもっとダサくならずに済んだと思う。精進しよう。 */
+.aside-list-item-i li a, .aside-list-item-a li a, .aside-list-item-m li a{
+    padding: 28px 38px;
+}
+
 .aside-list-item-i li a:link, a:hover, a:visited{
     color: #666666;
 }
